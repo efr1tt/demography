@@ -1,12 +1,13 @@
-"use client"
-
+// "use client"
 import React from "react"
 import styles from "./mapCountry.module.scss"
 import Link from "next/link"
+import { Tooltip } from "@mui/material"
 
 export const MapCountry = () => {
   const regions = [
     {
+      region: `Region82`,
       dataTitle: `Республика Крым`,
       dataCode: `RU-CR`,
       d: [
@@ -17,6 +18,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region51`,
       dataTitle: `Мурманская область`,
       dataCode: `RU-MUR`,
       d: [
@@ -28,6 +30,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region60`,
       dataTitle: `Псковская область`,
       dataCode: `RU-PSK`,
       d: [
@@ -38,6 +41,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region67`,
       dataTitle: `Смоленская область`,
       dataCode: `RU-SMO`,
       d: [
@@ -48,6 +52,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region32`,
       dataTitle: `Брянская область`,
       dataCode: `RU-BRY`,
       d: [
@@ -58,6 +63,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region46`,
       dataTitle: `Курская область`,
       dataCode: `RU-KRS`,
       d: [
@@ -68,6 +74,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region31`,
       dataTitle: `Белгородская область`,
       dataCode: `RU-BEL`,
       d: [
@@ -77,6 +84,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region36`,
       dataTitle: `Воронежская область`,
       dataCode: `RU-VOR`,
       d: [
@@ -87,6 +95,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region09`,
       dataTitle: `Карачаево-Черкесская Республика`,
       dataCode: `RU-KC`,
       d: [
@@ -96,6 +105,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region15`,
       dataTitle: `Республика Северная Осетия — Алания`,
       dataCode: `RU-SE`,
       d: [
@@ -105,6 +115,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region06`,
       dataTitle: `Республика Ингушетия`,
       dataCode: `RU-IN`,
       d: [
@@ -113,6 +124,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region05`,
       dataTitle: `Республика Дагестан`,
       dataCode: `RU-DA`,
       d: [
@@ -123,6 +135,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region08`,
       dataTitle: `Республика Калмыкия`,
       dataCode: `RU-KL`,
       d: [
@@ -136,6 +149,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region56`,
       dataTitle: `Оренбургская область`,
       dataCode: `RU-ORE`,
       d: [
@@ -149,6 +163,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region74`,
       dataTitle: `Челябинская область`,
       dataCode: `RU-CHE`,
       d: [
@@ -162,6 +177,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region55`,
       dataTitle: `Омская область`,
       dataCode: `RU-OMS`,
       d: [
@@ -174,6 +190,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region54`,
       dataTitle: `Новосибирская область`,
       dataCode: `RU-NVS`,
       d: [
@@ -186,6 +203,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region04`,
       dataTitle: `Республика Алтай`,
       dataCode: `RU-AL`,
       d: [
@@ -197,6 +215,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region22`,
       dataTitle: `Алтайский край`,
       dataCode: `RU-ALT`,
       d: [
@@ -209,6 +228,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region17`,
       dataTitle: `Республика Тыва`,
       dataCode: `RU-TY`,
       d: [
@@ -221,6 +241,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region28`,
       dataTitle: `Амурская область`,
       dataCode: `RU-AMU`,
       d: [
@@ -239,6 +260,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region79`,
       dataTitle: `Еврейская автономная область`,
       dataCode: `RU-YEV`,
       d: [
@@ -249,6 +271,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region25`,
       dataTitle: `Приморский край`,
       dataCode: `RU-PRI`,
       d: [
@@ -262,6 +285,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region49`,
       dataTitle: `Магаданская область`,
       dataCode: `RU-MAG`,
       d: [
@@ -279,6 +303,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region29`,
       dataTitle: `Архангельская область`,
       dataCode: `RU-ARK`,
       d: [
@@ -334,6 +359,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region65`,
       dataTitle: `Сахалинская область`,
       dataCode: `RU-SAK`,
       d: [
@@ -356,6 +382,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region41`,
       dataTitle: `Камчатский край`,
       dataCode: `RU-KAM`,
       d: [
@@ -384,6 +411,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region87`,
       dataTitle: `Чукотский автономный округ`,
       dataCode: `RU-CHU`,
       d: [
@@ -408,6 +436,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region39`,
       dataTitle: `Калининградская область`,
       dataCode: `RU-KGD`,
       d: [
@@ -416,6 +445,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region40`,
       dataTitle: `Калужская область`,
       dataCode: `RU-KLU`,
       d: [
@@ -426,6 +456,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region53`,
       dataTitle: `Новгородская область`,
       dataCode: `RU-NGR`,
       d: [
@@ -437,6 +468,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region69`,
       dataTitle: `Тверская область`,
       dataCode: `RU-TVE`,
       d: [
@@ -449,6 +481,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region50`,
       dataTitle: `Московская область`,
       dataCode: `RU-MOS`,
       d: [
@@ -462,6 +495,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region77`,
       dataTitle: `Москва`,
       dataCode: `RU-MOW`,
       d: [
@@ -470,6 +504,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region83`,
       dataTitle: `Ненецкий автономный округ`,
       dataCode: `RU-NEN`,
       d: [
@@ -488,6 +523,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region89`,
       dataTitle: `Ямало-Ненецкий автономный округ`,
       dataCode: `RU-YAN`,
       d: [
@@ -518,6 +554,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region27`,
       dataTitle: `Хабаровский край`,
       dataCode: `RU-KHA`,
       d: [
@@ -547,6 +584,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region23`,
       dataTitle: `Краснодарский край`,
       dataCode: `RU-KDA`,
       d: [
@@ -561,6 +599,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region26`,
       dataTitle: `Ставропольский край`,
       dataCode: `RU-STA`,
       d: [
@@ -572,6 +611,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region95`,
       dataTitle: `Чеченская Республика`,
       dataCode: `RU-CE`,
       d: [
@@ -581,6 +621,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region07`,
       dataTitle: `Кабардино-Балкарская Республика`,
       dataCode: `RU-KB`,
       d: [
@@ -590,6 +631,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region34`,
       dataTitle: `Волгоградская область`,
       dataCode: `RU-VGG`,
       d: [
@@ -601,6 +643,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region35`,
       dataTitle: `Вологодская область`,
       dataCode: `RU-VLG`,
       d: [
@@ -614,6 +657,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region61`,
       dataTitle: `Ростовская область`,
       dataCode: `RU-ROS`,
       d: [
@@ -626,6 +670,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region30`,
       dataTitle: `Астраханская область`,
       dataCode: `RU-AST`,
       d: [
@@ -637,6 +682,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region57`,
       dataTitle: `Орловская область`,
       dataCode: `RU-ORL`,
       d: [
@@ -646,6 +692,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region48`,
       dataTitle: `Липецкая область`,
       dataCode: `RU-LIP`,
       d: [
@@ -656,6 +703,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region71`,
       dataTitle: `Тульская область`,
       dataCode: `RU-TUL`,
       d: [
@@ -665,6 +713,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region62`,
       dataTitle: `Рязанская область`,
       dataCode: `RU-RYA`,
       d: [
@@ -675,6 +724,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region68`,
       dataTitle: `Тамбовская область`,
       dataCode: `RU-TAM`,
       d: [
@@ -685,6 +735,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region13`,
       dataTitle: `Республика Мордовия`,
       dataCode: `RU-MO`,
       d: [
@@ -695,6 +746,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region58`,
       dataTitle: `Пензенская область`,
       dataCode: `RU-PNZ`,
       d: [
@@ -705,6 +757,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region64`,
       dataTitle: `Саратовская область`,
       dataCode: `RU-SAR`,
       d: [
@@ -716,6 +769,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region73`,
       dataTitle: `Ульяновская область`,
       dataCode: `RU-ULY`,
       d: [
@@ -726,6 +780,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region63`,
       dataTitle: `Самарская область`,
       dataCode: `RU-SAM`,
       d: [
@@ -736,6 +791,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region45`,
       dataTitle: `Курганская область`,
       dataCode: `RU-KGN`,
       d: [
@@ -746,6 +802,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region02`,
       dataTitle: `Республика Башкортостан`,
       dataCode: `RU-BA`,
       d: [
@@ -759,6 +816,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region76`,
       dataTitle: `Ярославская область`,
       dataCode: `RU-YAR`,
       d: [
@@ -768,6 +826,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region44`,
       dataTitle: `Костромская область`,
       dataCode: `RU-KOS`,
       d: [
@@ -778,6 +837,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region37`,
       dataTitle: `Ивановская область`,
       dataCode: `RU-IVA`,
       d: [
@@ -787,6 +847,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region33`,
       dataTitle: `Владимирская область`,
       dataCode: `RU-VLA`,
       d: [
@@ -797,6 +858,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region52`,
       dataTitle: `Нижегородская область`,
       dataCode: `RU-NIZ`,
       d: [
@@ -808,6 +870,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region21`,
       dataTitle: `Чувашская Республика`,
       dataCode: `RU-CU`,
       d: [
@@ -816,6 +879,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region43`,
       dataTitle: `Кировская область`,
       dataCode: `RU-KIR`,
       d: [
@@ -829,6 +893,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region12`,
       dataTitle: `Республика Марий Эл`,
       dataCode: `RU-ME`,
       d: [
@@ -838,6 +903,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region16`,
       dataTitle: `Республика Татарстан`,
       dataCode: `RU-TA`,
       d: [
@@ -849,6 +915,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region18`,
       dataTitle: `Удмуртская Республика`,
       dataCode: `RU-UD`,
       d: [
@@ -858,6 +925,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region11`,
       dataTitle: `Республика Коми`,
       dataCode: `RU-KO`,
       d: [
@@ -877,6 +945,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region59`,
       dataTitle: `Пермский край`,
       dataCode: `RU-PER`,
       d: [
@@ -890,6 +959,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region03`,
       dataTitle: `Республика Бурятия`,
       dataCode: `RU-BU`,
       d: [
@@ -905,6 +975,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region75`,
       dataTitle: `Забайкальский край`,
       dataCode: `RU-ZAB`,
       d: [
@@ -921,6 +992,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region38`,
       dataTitle: `Иркутская область`,
       dataCode: `RU-IRK`,
       d: [
@@ -942,6 +1014,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region72`,
       dataTitle: `Тюменская область`,
       dataCode: `RU-TYU`,
       d: [
@@ -955,6 +1028,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region66`,
       dataTitle: `Свердловская область`,
       dataCode: `RU-SVE`,
       d: [
@@ -968,6 +1042,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region86`,
       dataTitle: `Ханты-Мансийский автономный округ - Югра`,
       dataCode: `RU-KHM`,
       d: [
@@ -985,6 +1060,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region24`,
       dataTitle: `Красноярский край`,
       dataCode: `RU-KYA`,
       d: [
@@ -1045,6 +1121,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region70`,
       dataTitle: `Томская область`,
       dataCode: `RU-TOM`,
       d: [
@@ -1057,6 +1134,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region42`,
       dataTitle: `Кемеровская область`,
       dataCode: `RU-KEM`,
       d: [
@@ -1068,6 +1146,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region19`,
       dataTitle: `Республика Хакасия`,
       dataCode: `RU-KK`,
       d: [
@@ -1078,6 +1157,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region01`,
       dataTitle: `Республика Адыгея`,
       dataCode: `RU-AD`,
       d: [
@@ -1088,6 +1168,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region14`,
       dataTitle: `Республика Саха (Якутия)`,
       dataCode: `RU-SA`,
       d: [
@@ -1141,6 +1222,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region47`,
       dataTitle: `Ленинградская область`,
       dataCode: `RU-LEN`,
       d: [
@@ -1152,6 +1234,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region10`,
       dataTitle: `Республика Карелия`,
       dataCode: `RU-KR`,
       d: [
@@ -1163,6 +1246,7 @@ export const MapCountry = () => {
       ],
     },
     {
+      region: `Region78`,
       dataTitle: `Санкт-Петербург`,
       dataCode: `RU-SPE`,
       d: [
@@ -1204,12 +1288,14 @@ export const MapCountry = () => {
         xmlSpace="preserve"
       >
         {regions.map((item, index) => (
-          <Link href="" key={index}>
-            <g data-title={item.dataTitle} data-code={item.dataCode}>
-              {item.d.map((element, index) => (
-                <path d={element} key={index}></path>
-              ))}
-            </g>
+          <Link href={item.region} key={index}>
+            <Tooltip title={item.dataTitle}>
+              <g data-title={item.dataTitle} data-code={item.dataCode}>
+                {item.d.map((element, index) => (
+                  <path d={element} key={index}></path>
+                ))}
+              </g>
+            </Tooltip>
           </Link>
         ))}
       </svg>
