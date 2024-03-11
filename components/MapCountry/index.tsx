@@ -1269,7 +1269,7 @@ export const MapCountry = () => {
     },
   ]
 
-  console.log("regions: ", regions)
+  // console.log("regions: ", regions)
 
   return (
     <div className={styles.rfmap}>
